@@ -17,7 +17,7 @@ const user = useSupabaseUser();
 
 <style scoped>
 header {
-  background-color: #ff9bfa;
+  background-color: #e463dd;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
