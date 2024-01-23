@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>&copy; 2024 Ashlyn Knox</p>
+    <p>&copy; Ashley / Dylan / Angel</p>
   </footer>
 </template>
 <style scoped>
