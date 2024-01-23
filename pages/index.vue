@@ -1,5 +1,10 @@
 <template>
   <main>
-    <h1>Home Page</h1>
+    <h1>This is THE MAIN PAGE :D</h1>
+    <header>
+      <nav>
+        YAY !
+      </nav>
+    </header>
   </main>
 </template>

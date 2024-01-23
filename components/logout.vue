@@ -19,7 +19,7 @@ function logout() {
 <style scoped>
 button {
   height: 32px;
-  background-color: blue;
+  background-color: #8484d3;
   color: white;
 }
 </style>

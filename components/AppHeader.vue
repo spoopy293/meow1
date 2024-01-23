@@ -3,9 +3,9 @@ const user = useSupabaseUser();
 </script>
 <template>
   <header>
-    <div>LOGO</div>
+    <div> <img src="https://images.dog.ceo/breeds/schipperke/n02104365_9369.jpg" alt="Adorable Puppy"style="width: 100px; height: 100px;"></div>
     <nav>
-      <NuxtLink to="login">Log In</NuxtLink>
+    <NuxtLink to="login">Log In</NuxtLink>
       <NuxtLink to="signup">Sign Up</NuxtLink>
     </nav>
     <div class="buttons">
@@ -17,7 +17,7 @@ const user = useSupabaseUser();
 
 <style scoped>
 header {
-  background-color: black;
+  background-color: #ff9bfa;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -38,5 +38,10 @@ a:hover {
 .buttons {
   display: flex;
   gap: 8px;
+}
+.link {
+  color: #f10a89;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 </style>
