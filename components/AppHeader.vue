@@ -7,6 +7,7 @@ const user = useSupabaseUser();
     <nav>
     <NuxtLink to="login">Log In</NuxtLink>
       <NuxtLink to="signup">Sign Up</NuxtLink>
+      <NuxtLink to="admin">Admin</NuxtLink>
     </nav>
     <div class="buttons">
       <p v-if="user">{{ user.email }}</p>
