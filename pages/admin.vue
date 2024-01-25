@@ -51,8 +51,10 @@ const user = useSupabaseUser();
         <p>Phone: {{ employee.PHONE_NUMBER }}</p>
       </li>
     </ul>
-    <h1>Insert New Data</h1>
     <section>
+      <button @click="getEmployeeData">Get Employee Data</button>
+    <h1>Insert New Data</h1>
+ 
       <label for="EMPLOYEE_ID">
         Employee ID
         <input type="EMPLOYEE_ID" v-model="EMPLOYEE_ID" />
