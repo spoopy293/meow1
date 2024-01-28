@@ -1,17 +1,23 @@
 <script setup>
 const user = useSupabaseUser();
 </script>
+
 <template>
   <header>
-    <div> <img src="https://images.dog.ceo/breeds/schipperke/n02104365_9369.jpg" alt="Adorable Puppy"style="width: 100px; height: 100px;"></div>
+    <div>
+      <img src="https://images.dog.ceo/breeds/schipperke/n02104365_9369.jpg" alt="Adorable Puppy" style="width: 100px; height: 100px;">
+    </div>
     <nav>
-    <NuxtLink to="login">Log In</NuxtLink>
+      <NuxtLink to="login">Log In</NuxtLink>
       <NuxtLink to="signup">Sign Up</NuxtLink>
       <NuxtLink to="admin">Admin</NuxtLink>
+      <NuxtLink to="employees">employees </NuxtLink>
     </nav>
     <div class="buttons">
+      <!-- Display user email if authenticated -->
       <p v-if="user">{{ user.email }}</p>
-      <Logout />
+      <!-- Logout component (make sure it's defined and available) -->
+      <!-- <Logout /> -->
     </div>
   </header>
 </template>
@@ -23,23 +29,28 @@ header {
   justify-content: space-between;
   padding: 1rem;
 }
+
 nav {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
 }
+
 a,
 div {
   color: white;
   text-decoration: none;
 }
+
 a:hover {
   color: lightblue;
 }
+
 .buttons {
   display: flex;
   gap: 8px;
 }
+
 .link {
   color: #f10a89;
   text-decoration: none;

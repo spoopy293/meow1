@@ -45,14 +45,13 @@ const user = useSupabaseUser();
     <h1>Employees</h1>
     <!-- render the fetched data -->
     <ul>
-      <li v-for="employee in eMPLOYEES" :key="employee.EMPLOYEE_ID">
+      <li v-for="employee in employees" :key="employee.EMPLOYEE_ID">
         <h3>Name: {{ employee.FIRST_NAME }} {{ employee.LAST_NAME }}</h3>
         <p>Email: {{ employee.EMAIL }}</p>
         <p>Phone: {{ employee.PHONE_NUMBER }}</p>
       </li>
     </ul>
     <section>
-      <button @click="getEmployeeData">Get Employee Data</button>
     <h1>Insert New Data</h1>
  
       <label for="EMPLOYEE_ID">
