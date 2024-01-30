@@ -42,15 +42,7 @@ const user = useSupabaseUser();
       <!-- Show user information -->
       <p v-if="user">{{ user.email }}</p>
     </section>
-    <h1>Employees</h1>
-    <!-- render the fetched data -->
-    <ul>
-      <li v-for="employee in employees" :key="employee.EMPLOYEE_ID">
-        <h3>Name: {{ employee.FIRST_NAME }} {{ employee.LAST_NAME }}</h3>
-        <p>Email: {{ employee.EMAIL }}</p>
-        <p>Phone: {{ employee.PHONE_NUMBER }}</p>
-      </li>
-    </ul>
+
     <section>
     <h1>Insert New Data</h1>
  
